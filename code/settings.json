@@ -1,13 +1,16 @@
 {
+"git.enableCommitSigning": true,
+"explorer.confirmDelete": false,
+
 // word wrap settings    
-    "editor.wordWrap": "on",
+"editor.wordWrap": "on",
 //-------- Remote VSCode configuration --------
 
 // Port number to use for connection.
-"remote.port": 52698,
+//"remote.port": 52698,
 
 // Launch the server on start up.
-"remote.onstartup": true,
+//"remote.onstartup": true,
 
 // Controls the font family.
 "editor.fontFamily": "'SourceCodePro Nerd Font'",
