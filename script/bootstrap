@@ -209,30 +209,6 @@ jdcrontab () {
     else
     info "ERROR $PATH could not be added to crontab"
     fi
-
-  add_cron "speedtest-cli --simple > ~/bin/bandwidth.log"
-    if [[ $? -eq 0 ]]
-    then
-    success "crontab created for speedtest cli --simple"
-    else
-    info "ERROR crontab could not be created for speedtest cli --simple"
-    fi
-
-  add_cron "speedtest-cli --json > ~/bin/bandwidth.json"
-    if [[ $? -eq 0 ]]
-    then
-    success "crontab created for speedtest cli --json"
-    else
-    info "ERROR crontab could not be created for speedtest cli --json"
-    fi
-
-  # first run of speedtest-cli
-  echo "Running speedtest-cli for tmux status bar data now..."
-  speedtest-cli --simple > ~/bin/bandwidth.log
-  success "speedtest-cli bandwidth.log created"
-
-  speedtest-cli --json > ~/bin/bandwidth.json
-  success "speedtest-cli bandwidth.json created"
 }
 
 jditermConfig () {
