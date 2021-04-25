@@ -158,6 +158,6 @@ export PATH=$PATH:$MONGO_PATH/bin
 #---- End Export ----
 
 #---- Source ----
-source $(dirname $(gem which colorls))/tab_complete.sh
+#source $(dirname $(gem which colorls))/tab_complete.sh
 #---- End Source ----
 #---- END CUSTOM ----
